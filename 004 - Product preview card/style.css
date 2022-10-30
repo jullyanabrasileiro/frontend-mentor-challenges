@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+ul li:first-child {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+}
+
+ul li:nth-child {
+    color: hsl(228, 12%, 48%);
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    color: hsl(228, 12%, 48%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 0.1px);
+    margin: 0 1.5rem;
+}
+
+h1 {
+    font-family: "Fraunces", sans-serif;
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    margin: 1rem 0 1rem 0;
+}
+
+p {
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.price {
+    font-family: "Fraunces", sans-serif;
+    color: hsl(158, 36%, 37%);
+}
+
+button, li {
+    font-family: inherit;
+}
+
+button {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button img {
+    margin-right: 0.5rem;
+}
+
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
+.container {
+    max-width: 600px;
+}
+
+.container article:first-child img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.container article:last-child {
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    border-radius: 0 0 1rem;
+    margin-top: -1rem;
+}
+
+.attribution {
+    margin: 3rem;
+    font-size: 14px; text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 640px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container article:first-child img {
+        border-radius: 0.5rem 0 0 0.5rem;
+        width: 100%;
+    }
+
+    .container article:last-child {
+        border-radius:  0 0.5rem 0.5rem 0;
+        margin-top: 0;
+        padding: 1.5rem 1.5rem 0;
+    }
+
+    h2 {
+        margin-top: 0.5rem;
+    }
+
+    picture img {
+        height: 100%;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        margin-bottom: 1rem;
+
+    }
+
+}
