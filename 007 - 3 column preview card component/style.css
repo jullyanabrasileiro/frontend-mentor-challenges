@@ -1,10 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Josefin Sans, sans-serif;
 }
 
+body {
+    font-family: "Lexend Deca", sans-serif;
+}
+
+h3 {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+body, button {
+    font-family: "Lexend Deca", sans-serif;
+}
 
 .attribution {
     margin: 3rem;
