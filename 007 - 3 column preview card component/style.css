@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Josefin Sans, sans-serif;
+}
+
+
+.attribution {
+    margin: 3rem;
+    font-size: 14px; text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(229, 6%, 66%);
+}
