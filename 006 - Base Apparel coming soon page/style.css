@@ -7,12 +7,6 @@
     font-family: Josefin Sans, sans-serif;
 }
 
-body {
-    background-image: url(images/bg-pattern-desktop.svg);
-    background-size: cover;
-    margin: 0;
-}
-
 h1 {
     color: hsl(0, 6%, 24%);
     font-size: 60px;
@@ -46,7 +40,10 @@ p {
 }
 
 .left {
-    padding: 0 40px;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-size: cover;
+    background-position: center center;
+    padding: 0 40px 40px;
     width: 60%;
 }
 
@@ -77,10 +74,7 @@ p {
 form {
     position: relative;
     max-width: 300px;
-}
-
-form.error {
-
+    animation: comeinleft 0.5s ease forwards;
 }
 
 input {
@@ -90,7 +84,7 @@ input {
 	font-size: 16px;
 	padding: 15px 30px;
 	height: 55px;
-	width: 100%;
+	width: 150%;
 }
 
 input:focus {
@@ -116,7 +110,7 @@ button {
 	padding: 15px;
 	position: absolute;
 	top: 0;
-	right: 0;
+	left: 350px;
 	transition: opacity 0.2s ease;
 	height: 55px;
 	width: 100px;
@@ -130,7 +124,7 @@ button:hover{
 	display: none;
 	position: absolute;
 	top: 15px;
-	right: 110px;
+	left: 310px;
 }
 
 form.error .error-icon {
@@ -173,17 +167,22 @@ form.error small {
     }
 }
 
-@media screen and (max-width: 400px) {
-    .logo {
-        margin: 30px 0;
-        width: 100px;
-    }
+@media screen and (max-width: 800px) {
+	.logo {
+		margin: 30px 0;
+		width: 100px;
+	}
 
-    .bg-mobile {
-        display: block;
-        margin-left: -40px;
-        margin-right: -40px;
-        width: calc(100% + 80px);
+	.bg-mobile {
+		display: block;
+		margin-left: -80px;
+		margin-right: -80px;
+		width: calc(100% + 160px);
+	}
+
+    h1 {
+        margin-top: 60px;
+        font-size: 40px;
     }
 
     .left {
