@@ -15,7 +15,7 @@
 
   <div class="container">
     <!-- Rating state start -->
-    <div class="rating hidden">
+    <div class="rating" id="rating">
       <div class="star"><img src="images/icon-star.svg" alt="star"></div>
       <h1>How did we do?</h1>
       <p>
@@ -24,19 +24,19 @@
       </p>
       <div class="numbers">
         <data class="number-circle" value="1">1</data>
-        <data class="number-circle" value="2">2</data>
+        <data class="number-circle number-circle-active" value="2">2</data>
         <data class="number-circle" value="3">3</data>
         <data class="number-circle" value="4">4</data>
         <data class="number-circle" value="5">5</data>
       </div>
-      <button>Submit</button>
+      <button id="submit">Submit</button>
     </div>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="thank-you">
+    <div class="hidden thank-you" id="hidden-div">
       <img src="images/illustration-thank-you.svg" alt="">
-      <div class="selection">You selected <!-- Add rating here --> out of 5</div>
+      <div class="selection">You selected <span class="selected-number"></span> out of 5</div>
       <h1>Thank you!</h1>
       <p>
         We appreciate you taking the time to give a rating. If you ever need more support,
@@ -52,5 +52,7 @@
       Coded by <a href="https://github.com/jullyanabrasileiro/">Jullyana Brasileiro</a>.
     </div>
   </footer>
+
+  <script src="scripts/scripts.js"></script>
 </body>
 </html>

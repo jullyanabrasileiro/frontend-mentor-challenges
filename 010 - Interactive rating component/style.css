@@ -83,12 +83,12 @@ p {
 
 .number-circle:hover {
     color: var(--white);
-    background-color: var(--light-grey);
+    background-color: var(--orange);
 }
 
-.number-circle:active {
+.number-circle-active {
     color: var(--white);
-    background-color: var(--orange);
+    background-color: var(--light-grey);
 }
 
 button {
@@ -111,7 +111,7 @@ button:hover {
 
 .thank-you {
     text-align: center;
- }
+}
 
 .thank-you img {
     width: 162px;
