@@ -110,6 +110,32 @@ button:hover {
 }
 
 .thank-you {
+    text-align: center;
+ }
+
+.thank-you img {
+    width: 162px;
+    height: 108px;
+    display: block;
+    margin: auto;
+    margin-bottom: 32px;
+}
+
+.selection {
+    width: 193px;
+    height: 32px;
+    color: var(--orange);
+    background-color: var(--dark-blue);
+    border-radius: 30px;
+    margin-bottom: 32px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
     display: none;
 }
 
