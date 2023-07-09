@@ -23,20 +23,20 @@
         to help us improve our offering!
       </p>
       <div class="numbers">
-        <data class="number-circle" value="1">1</data>
-        <data class="number-circle number-circle-active" value="2">2</data>
-        <data class="number-circle" value="3">3</data>
-        <data class="number-circle" value="4">4</data>
-        <data class="number-circle" value="5">5</data>
+        <data class="number-circle" value="1" onclick="selectRating(1)">1</data>
+        <data class="number-circle" value="2" onclick="selectRating(2)">2</data>
+        <data class="number-circle" value="3" onclick="selectRating(3)">3</data>
+        <data class="number-circle" value="4" onclick="selectRating(4)">4</data>
+        <data class="number-circle" value="5" onclick="selectRating(5)">5</data>
       </div>
-      <button id="submit">Submit</button>
+      <button onclick="submit()">Submit</button>
     </div>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="hidden thank-you" id="hidden-div">
+    <div class="hidden thank-you">
       <img src="images/illustration-thank-you.svg" alt="">
-      <div class="selection">You selected <span class="selected-number"></span> out of 5</div>
+      <div class="selection">You selected &nbsp;<span class="selected-number">1</span>&nbsp; out of 5</div>
       <h1>Thank you!</h1>
       <p>
         We appreciate you taking the time to give a rating. If you ever need more support,
