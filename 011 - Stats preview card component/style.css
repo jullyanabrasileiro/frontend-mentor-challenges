@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    /*Primary*/
+
+    --very-dark-blue-maing-bg: ;
+    --dark-desaturated-blue-maing-bg: hsl(244, 38%, 16%);
+    --soft-violet: hsl(244, 38%, 16%);
+
+    /*Neutral*/
+
+    --slightly-transparent-white-paragraph: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-white-headings: hsla(0, 0%, 100%, 0.6);
+    --white: hsl(0, 0%, 100%);
+
+    --ff-inter: 'Inter', sans-serif;
+    --ff-inter: 'Lexend Deca', sans-serif;
+
+    --fs-1: 15px;
+    --fs-2: 28px;
+
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--ff-overpass);
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--medium-grey);
+    margin: 50px auto;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
