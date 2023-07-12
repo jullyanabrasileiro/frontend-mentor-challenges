@@ -34,13 +34,35 @@ body {
 }
 
 .container {
-    background-color: var(--dark-desaturated-blue-card-bg);
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 70vw;
+    border-radius: 7px;
+    background: var(--dark-desaturated-blue-card-bg);
+}
+
+.main .text {
+    width: 50%;
+    padding: 4rem;
+}
+
+.main .header-img {
+    width: 50%;
 }
 
 h1 {
     color: var(--white);
     font-family: var(--ff-inter);
     font-weight: var(--fw-700);
+    font-size: var(--fs-2);
 }
 
 .span-title {
@@ -50,6 +72,27 @@ h1 {
 p {
     color: var(--slightly-transparent-white-paragraph);
     font-family: var(--ff-lexend-deca);
+    font-size: var(--fs-1);
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-numbers {
+    color: var(--white);
+    font-family: var(--ff-inter);
+    font-weight: var(--fw-700);
+    font-size: var(--fs-2);
+}
+
+.description {
+    color: var(--slightly-transparent-white-paragraph);
+    font-family: var(--ff-lexend-deca);
+    font-size: var(--fs-1);
+    text-transform: uppercase;
 }
 
 .attribution {
