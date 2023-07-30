@@ -1,21 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
+:root {
+    /*Primary*/
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /*Neutral*/
+    --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    /*Font*/
+    --ff-inter: 'Outfit', sans-serif;
+
+    /*Font Size*/
+    --fs-paragraph: 18px;
+
+    /*Font Weights*/
+    --fw-400: 400;
+    --fw-700: 700;
+    --fw-700: 600;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
-    background-color: hsl(217, 54%, 11%);
     display: flex;
     flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    min-height: 100vh;
+    background: var(--very-dark-blue-main-bg);
 }
 
 main {
@@ -24,22 +42,22 @@ main {
 }
 
 .wrapper {
-    margin: 2rem 1 rem;
-    padding: 20px;
-    background-color: hsl(216, 50%, 16%);
-    box-shadow:  0px 0px 30px 5px hsl(218, 55%, 8%);
-    border-radius: 10px;
+    margin: 2rem 2 rem;
+    padding: 25px;
+    background: var(--very-dark-blue-card-bg);
+    box-shadow: 0px 0px 30px 5px hsl(212, 63%, 9%);
+    border-radius: 15px;
 }
 
 .img-top {
-    border-radius: 10px;
-    overflow: hidden;
     position: relative;
+    text-align: center;
 }
 
 .img-top img {
     width: 100%;
     display: block;
+    border-radius: 15px;
 }
 
 .img-overlay {
@@ -50,7 +68,6 @@ main {
     width: 100%;
     background-color: hsla(178, 100%, 50%, 0.5);
     display: none;
-    cursor: pointer;
 }
 
 .img-overlay img {
@@ -61,75 +78,8 @@ main {
     transform: translate(-50%, -50%);
 }
 
-.box-text a {
-    color: hsl(0, 0%, 100%);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 20px;
-    padding: 20px 0;
-    display: inline-block;
-}
-
-.box-text a:hover{
-    color: hsl(178, 100%, 50%);
-}
-
-.box-text p {
-    color: hsl(215, 51%, 70%);
-}
-
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-
-.eth, .days {
-    display: flex;
-    align-items: center;
-}
-
-.eth p {
-    color: hsl(178, 100%, 50%);
-    font-weight: 600;
-    padding-left: 5px;
-}
-
-.days p {
-    padding-left: 5px;
-}
-
-hr {
-    border-color: hsl(215, 32%, 27%);
-}
-
-.author {
-    display: flex;
-    align-items: center;
-    padding-top: 10px;
-}
-
-.author img {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border: 2px solid hsl(0, 0%, 100%);
-    margin-right: 15px;
-}
-
-.author a {
-    color: hsl(0, 0%, 100%);
-    font-size: 1rem;
-}
-
-.author a:hover{
-    color: hsl(178, 100%, 50%);
-}
-
 .img-top:hover .img-overlay {
     display: block;
-
 }
 
 
