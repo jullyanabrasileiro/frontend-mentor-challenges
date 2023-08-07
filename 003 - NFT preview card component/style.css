@@ -18,9 +18,9 @@
     --fs-paragraph: 18px;
 
     /*Font Weights*/
+    --fw-300: 300;
     --fw-400: 400;
-    --fw-700: 700;
-    --fw-700: 600;
+    --fw-600: 600;
 }
 
 *{
@@ -68,6 +68,7 @@ main {
     width: 100%;
     background-color: hsla(178, 100%, 50%, 0.5);
     display: none;
+    border-radius: 15px;    
 }
 
 .img-overlay img {
@@ -80,8 +81,80 @@ main {
 
 .img-top:hover .img-overlay {
     display: block;
+    cursor: pointer;
 }
 
+.box-text a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: var(--fw-600);
+    font-size: 21px;
+    padding: 20px 0;
+    display: inline-block;
+}
+
+.box-text p {
+    color: var(--soft-blue);
+    text-decoration: none;
+    font-weight: var(--fw-300);
+    font-size: var(--fs-paragraph);
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.eth, .days {
+    display: flex;
+    align-items: center;
+}
+
+.eth p {
+    color: var(--cyan);
+    font-weight: var(--fw-600);
+    padding-left: 7px;
+}
+
+.days p {
+    padding-left: 7px;
+}
+
+hr {
+   border-color: var(--very-dark-blue-line); 
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.author img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    margin-right:  10px;
+}
+
+.author a {
+    color: var(--white);
+    font-size: var(--fs-paragraph);
+}
+
+.box-text a:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.author a:hover {
+    color: var(--cyan);
+}
 
 .attribution {
     margin: 3rem;
